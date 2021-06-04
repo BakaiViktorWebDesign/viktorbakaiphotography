@@ -1,0 +1,179 @@
+/* ===== BASIC CSS RESET ====== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* =======  NAVIGATION MENU ======= */
+
+.menu {
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+}
+  
+.menu .first-line {
+    display: inline-block;
+    margin: 1rem auto 4rem auto;
+    color: rgba(110,150,200,1);
+
+}
+
+.menu h1:hover {
+    background-image: linear-gradient(140deg, rgb(255,0,0,.6), rgb(255,255,255,.8), rgba(0,255,0,.6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.menu div {
+    font-family: 'Chela One', cursive;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    height: 3rem;
+}
+  
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+}
+  
+.menu a:hover {
+    background-color: rgba(255,255,255,.6);
+    transition: background-color .3s ease-in-out;
+}
+  
+.menu img {
+      width: 3rem;
+      border-radius: 10%;
+      border: .05rem solid rgba(255,255,255,.8);
+}
+  
+/* ========  MEDIA QUERY ==========  */
+
+@media all and (min-width: 480px) and (orientation: landscape) {
+      
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        text-align: right; 
+    }
+
+    .menu div {
+        display: inline-block;
+        margin: .5rem .8rem;
+    }
+
+    .menu .first-line h1{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1rem;
+    }
+
+    .menu .first-line {
+        position: absolute;
+        left: 1rem;
+        top: 0;
+        margin-top: .5rem;
+    }
+
+    .menu a {
+        padding-left: .2rem;
+        padding-right: .2rem;
+    }
+
+    .menu a:hover {
+        border-radius: 10%;
+    }
+}
+
+
+/* ========= MAIN ========== */
+
+body {
+    background-color: rgba(110,150,200,1);
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  margin: 20rem auto;
+  text-align: center;
+}
+
+
+/* =======  FOOTER  =========  */
+
+footer {
+    background-color: rgba(0,0,0,1);
+    display: table;
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Chela One', cursive;
+    font-size: 1rem;
+  }
+  
+  .footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  } 
+  
+  footer small {
+    color: rgba(255,255,255,.8);
+    letter-spacing: .05rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .footer-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(110,150,200,1);
+    margin: 0 1rem;
+    padding: .5rem;
+  }
+  
+  .footer-nav a:hover {
+    background-color: rgba(0,0,0,1);
+    border: .05rem solid rgba(255,255,255,1);
+    border-radius: 10%;
+    transition: all .15s ease-in-out;
+  }
+  
+  /* ========  MEDIA QUERY  =======  */
+
+  @media all and (min-width: 480px) and (orientation: landscape) {
+    footer {
+      display: block;
+      height: 6rem;
+      line-height: 2rem;
+      text-align: left;
+    }
+
+    .footer-wrapper {
+      display: inline;
+    }
+
+    footer small {
+      display: inline;
+      margin: .5rem 1rem;
+      padding: 0;
+    }
+
+    .footer-nav {
+      display: block;
+      position: absolute;
+      right: 1rem;
+    }
+    
+    .footer-nav a {
+      padding: 0.2rem;
+    }
+
+  }
