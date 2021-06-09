@@ -9,14 +9,14 @@
 /* =======  NAVIGATION MENU ======= */
 
 .menu {
-    background-color: rgba(0,0,0,1);
+    background-image: url(assets/fancy-cushion.png);
     text-align: center;
 }
   
 .menu .first-line {
     display: inline-block;
     margin: 1rem auto 4rem auto;
-    color: rgba(110,150,200,1);
+    color: rgba(240, 179, 100,.8);
 
 }
 
@@ -54,61 +54,183 @@
 /* ========  MEDIA QUERY ==========  */
 
 @media all and (min-width: 480px) and (orientation: landscape) {
-      
-    .menu {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-        text-align: right; 
-    }
 
-    .menu div {
-        display: inline-block;
-        margin: .5rem .8rem;
-    }
+  .menu {
+    text-align: right; 
+  }
 
-    .menu .first-line h1{
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 1rem;
-    }
+  .menu div {
+    display: inline-block;
+    margin: .5rem .8rem;
+  }
 
-    .menu .first-line {
-        position: absolute;
-        left: 1rem;
-        top: 0;
-        margin-top: .5rem;
-    }
+  .menu .first-line h1{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1rem;
+  }
 
-    .menu a {
-        padding-left: .2rem;
-        padding-right: .2rem;
-    }
+  .menu .first-line {
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    margin-top: .5rem;
+  }
 
-    .menu a:hover {
-        border-radius: 10%;
-    }
+  .menu a {
+    padding-left: .2rem;
+    padding-right: .2rem;
+  }
+
+  .menu a:hover {
+    border-radius: 10%;
+  }
 }
+
 
 
 /* ========= MAIN ========== */
 
 body {
-    background-color: rgba(110,150,200,1);
+    background-image: url(assets/cork-board.png);
 }
 
-.text {
-  color: white;
-  font-size: 2rem;
-  margin: 20rem auto;
+.container {
+    background-image: url(assets/natural_paper.png);
+    width: 90%;
+    height: 100%;
+    margin: 2rem auto;
+    border: .2rem solid rgba(0,0,0,1);
+    border-radius: 9999px;
+}
+
+.pin {
+  display: block;
+  width: 3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.article-title {
+    font-family: 'KoHo', sans-serif;
+    font-size: 2rem;
+    color: rgba(0,0,0,1);
+    text-decoration: underline;
+    text-align: center;
+    margin: 3rem 10% 3rem 10%;
+    font-weight: 900;
+}
+
+.article-img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 3%;
+}
+
+.article-list {
+  font-family: 'KoHo', sans-serif;
+  font-size: 1.5rem;
+  color: rgba(0,0,0,1);
   text-align: center;
+  margin: 1rem;
+  font-weight: 900;
+}
+
+.article-list li {
+  margin-top: 1rem;
+}
+
+.video-container {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 100%;
+  width: 90%;
+  border-radius: 3%;
+}
+
+/* ========== MEDIA QUERY ============ */
+
+@media all and (min-width: 480px) and (orientation: landscape) {
+  .container {
+    width: 95%;
+    margin: 6rem auto;
+    border: 1rem double rgba(0,0,0,1);
+    border-radius: 1.5%;
+  }
+
+  .pin {
+    display: block;
+    width: 4rem;
+    margin: 0 auto;
+    margin-top: -2rem;
+  }
+ 
+  .article-title {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-align: left;
+    margin: 3rem 0 3rem 3%;
+    font-weight: 900;
+  }
+
+  .article-img {
+    display: block;
+    float: right;
+    width: 25%;
+    height: auto;
+    margin: 0 5% 2% 2%;
+    border-radius: 2%;
+    box-shadow: -1rem 1rem 1rem rgba(0,0,0,.6);
+  }
+
+  .article-list {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    font-weight: 900;
+    list-style: disc;
+  }
+
+  .article-list li {
+    margin-top: 0.2rem;
+  }
+
+  .video-container {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    margin-bottom: -13rem;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 60%;
+    width: 60%;
+    border-radius: 2%;
+    box-shadow: -1rem 1rem 1rem rgba(0,0,0,.6);
+  }
+
 }
 
 /* =======  FOOTER  =========  */
 
 footer {
-    background-color: rgba(0,0,0,1);
+    background-image: url(assets/fancy-cushion.png);
     display: table;
     height: 8rem;
     width: 100%;
@@ -139,9 +261,8 @@ footer {
   }
   
   .footer-nav a:hover {
-    background-color: rgba(0,0,0,1);
-    border: .05rem solid rgba(255,255,255,1);
-    border-radius: 10%;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 5%;
     transition: all .15s ease-in-out;
   }
   

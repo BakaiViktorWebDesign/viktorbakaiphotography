@@ -9,14 +9,14 @@
 /* =======  NAVIGATION MENU ======= */
 
 .menu {
-    background-color: rgba(0,0,0,1);
+    background-image: url(assets/fancy-cushion.png);
     text-align: center;
 }
   
 .menu .first-line {
     display: inline-block;
     margin: 1rem auto 4rem auto;
-    color: rgba(110,150,200,1);
+    color: rgba(165, 255, 165,1);
 
 }
 
@@ -95,21 +95,69 @@
 /* ========= MAIN ========== */
 
 body {
-    background-color: rgba(110,150,200,1);
+    background-image: url(assets/upfeathers.png);
+    background-color: rgba(0,255,0,.2);
+    background-blend-mode: overlay;
+}
+
+.cont {
+  text-align: center;
+  margin: 6rem auto;
+}
+
+.links {
+  color: rgba(0,0,0,1);
+  font-family: 'KoHo', sans-serif;
+  font-weight: 900;
+  letter-spacing: .5rem;
+  font-size: 2.5rem;
+  padding: .8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: .2rem solid rgba(0,0,0,1);
+  border-radius: 9999px;
 }
 
 .text {
-  color: white;
-  font-size: 2rem;
-  margin: 20rem auto;
+  font-family: 'Rochester', cursive;
+  color:rgba(0,0,0,1);
+  font-size: 4rem;
+  margin-top: 12rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
+.links:hover {
+  background-color: rgba(0,0,0,.5);
+  box-shadow: .8rem .8rem 2rem rgba(0,0,0,1);
+}
+
+.links:active {
+  background-color: rgba(255,255,255,.5);
+  box-shadow: -.8rem -.8rem 2rem rgba(0,0,0,1);
+}
+
+/* ============ MEDIA QUERY ============ */
+
+@media all and (min-width: 480px) and (orientation: landscape) {
+  .box {
+    margin-top: 8rem;
+  } 
+  
+  .cont {
+     margin: 4rem; 
+   }
+
+   .text {
+     margin: 0;
+     margin-top: 8rem;
+   }
+}
 
 /* =======  FOOTER  =========  */
 
 footer {
-    background-color: rgba(0,0,0,1);
+    background-image: url(assets/fancy-cushion.png);
     display: table;
     height: 8rem;
     width: 100%;
@@ -140,9 +188,8 @@ footer {
   }
   
   .footer-nav a:hover {
-    background-color: rgba(0,0,0,1);
-    border: .05rem solid rgba(255,255,255,1);
-    border-radius: 10%;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 5%;
     transition: all .15s ease-in-out;
   }
   
@@ -150,6 +197,8 @@ footer {
 
   @media all and (min-width: 480px) and (orientation: landscape) {
     footer {
+      position: fixed;
+      bottom: 0;
       display: block;
       height: 6rem;
       line-height: 2rem;
