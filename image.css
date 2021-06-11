@@ -44,7 +44,7 @@ h1 {
 
 /* ========= MEDIA QUERY ========= */
 
-@media all and (min-width: 480px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
     body {
       width: 100%;
     }

@@ -57,7 +57,7 @@ html {
   
 /* ========  MEDIA QUERY ==========  */
 
-@media all and (min-width: 768px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
       
     .menu {
         position: fixed;
@@ -131,7 +131,7 @@ body {
 
 /* =============== MEDIA QUERY =========== */
 
-@media all and (min-width: 768px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
     body {
       height: 100vh;
       background-image: url(assets/about-me-background.png);
@@ -219,7 +219,7 @@ footer {
   
   /* ========  MEDIA QUERY  =======  */
 
-  @media all and (min-width: 768px) and (orientation: landscape) {
+  @media all and (min-width: 768px) {
     footer {
       position: fixed;
       bottom: 0;

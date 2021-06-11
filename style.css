@@ -55,7 +55,7 @@ html {
   
   /* ========  MEDIA QUERY ==========  */
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 768px) {
 
       .menu {
         text-align: right; 
@@ -135,7 +135,7 @@ html {
   
   /* ====== MEDIA QUERY  ========= */
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 768px) {
 
     .headline {
       font-size: 6rem;
@@ -194,7 +194,7 @@ html {
   
   /* ========  MEDIA QUERY  =======  */
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 768px) {
     footer {
       display: block;
       height: 6rem;

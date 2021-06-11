@@ -57,7 +57,7 @@ html {
   
 /* ========  MEDIA QUERY ==========  */
 
-@media all and (min-width: 768px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
 
   .menu {
     text-align: right; 
@@ -115,7 +115,7 @@ body {
 
 .article-title {
     font-family: 'KoHo', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgba(0,0,0,1);
     text-decoration: underline;
     text-align: center;
@@ -163,7 +163,7 @@ body {
 
 /* ========== MEDIA QUERY ============ */
 
-@media all and (min-width: 768px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
   .container {
     width: 95%;
     margin: 6rem auto;
@@ -270,7 +270,7 @@ footer {
   
   /* ========  MEDIA QUERY  =======  */
 
-  @media all and (min-width: 768px) and (orientation: landscape) {
+  @media all and (min-width: 768px) {
     footer {
       display: block;
       height: 6rem;

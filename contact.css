@@ -57,7 +57,7 @@ html {
   
 /* ========  MEDIA QUERY ==========  */
 
-@media all and (min-width: 768px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
       
     .menu {
         position: fixed;
@@ -143,7 +143,7 @@ body {
 
 /* ============ MEDIA QUERY ============ */
 
-@media all and (min-width: 768px) and (orientation: landscape) {
+@media all and (min-width: 768px) {
   .box {
     margin-top: 8rem;
   } 
@@ -199,7 +199,7 @@ footer {
   
   /* ========  MEDIA QUERY  =======  */
 
-  @media all and (min-width: 768px) and (orientation: landscape) {
+  @media all and (min-width: 768px) {
     footer {
       position: fixed;
       bottom: 0;
