@@ -57,7 +57,7 @@ html {
   
 /* ========  MEDIA QUERY ==========  */
 
-@media all and (min-width: 480px) and (orientation: landscape) {
+@media all and (min-width: 768px) and (orientation: landscape) {
 
   .menu {
     text-align: right; 
@@ -121,7 +121,9 @@ body {
     transition: all 1.5s ease-in-out;
 }
 
-@media all and (min-width: 480px) and (orientation: landscape) {
+/* ============ MEDIA QUERY ============= */
+
+@media all and (min-width: 768px) and (orientation: landscape) {
   main {
     margin-top: 6rem;
   }
@@ -185,7 +187,7 @@ footer {
   
   /* ========  MEDIA QUERY  =======  */
 
-  @media all and (min-width: 480px) and (orientation: landscape) {
+  @media all and (min-width: 768px) and (orientation: landscape) {
     footer {
       display: block;
       height: 6rem;
