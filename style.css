@@ -58,6 +58,10 @@ html {
   @media all and (min-width: 992px) {
 
       .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
         text-align: right; 
       }
 
