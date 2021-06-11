@@ -57,7 +57,7 @@ html {
   
 /* ========  MEDIA QUERY ==========  */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
       
     .menu {
         position: fixed;
@@ -143,7 +143,7 @@ body {
 
 /* ============ MEDIA QUERY ============ */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .box {
     margin-top: 8rem;
   } 
@@ -199,7 +199,7 @@ footer {
   
   /* ========  MEDIA QUERY  =======  */
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 992px) {
     footer {
       position: fixed;
       bottom: 0;
