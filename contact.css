@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =======  NAVIGATION MENU ======= */
 
 .menu {
@@ -121,7 +125,7 @@ body {
 .text {
   font-family: 'Rochester', cursive;
   color:rgba(0,0,0,1);
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 12rem;
   margin-bottom: 3rem;
   text-align: center;

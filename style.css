@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* =======  NAVIGATION MENU ======= */
 
   .menu {
@@ -132,7 +136,7 @@
   /* ====== MEDIA QUERY  ========= */
 
   @media all and (min-width: 480px) and (orientation: landscape) {
-  
+
     .headline {
       font-size: 6rem;
       padding-top: 5rem;
