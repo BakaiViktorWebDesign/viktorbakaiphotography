@@ -24,11 +24,9 @@ html {
 
 }
 
-.menu h1:hover {
-    background-image: linear-gradient(140deg, rgb(255,0,0,.6), rgb(255,255,255,.8), rgba(0,255,0,.6));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
+.menu h1 {
+  color: rgba(255,255,255,.8);
+  cursor: default;
 }
 
 .menu div {
@@ -91,7 +89,9 @@ html {
   }
 
   .menu a:hover {
-    border-radius: 10%;
+    background: none;
+    color: rgb(145, 210, 255);
+    transition: color 1s ease-in-out;
   }
 }
 
@@ -114,7 +114,7 @@ body {
     width: 80vw;
     margin: 3rem auto;
     border: .1rem solid rgba(0,0,0,1);
-    border-radius: 2%;
+    border-radius: 15px;
     padding: 1rem;
     opacity: 60%;
 }
@@ -141,12 +141,13 @@ body {
      vertical-align: middle;
      width: 15vw;
      margin: 6rem 2.4rem;
-     -webkit-box-reflect: below 0.4rem linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3));
+     -webkit-box-reflect: below 0.4rem linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
    }
 
    .image img:hover {
      padding: 1rem;
-     transition: all .5s ease-in-out;
+     transition: all 1s ease-in-out;
+     box-shadow: none;
    }
 }
 
@@ -173,6 +174,7 @@ footer {
     letter-spacing: .05rem;
     margin-bottom: 1rem;
     display: block;
+    cursor: default;
   }
   
   .footer-nav a {
@@ -207,6 +209,7 @@ footer {
       display: inline;
       margin: .5rem 1rem;
       padding: 0;
+      cursor: default;
     }
 
     .footer-nav {
@@ -216,7 +219,14 @@ footer {
     }
     
     .footer-nav a {
+      color: rgba(255,255,255,.8);
       padding: 0.2rem;
+    }
+
+    .footer-nav a:hover {
+      background: none;
+      color: rgb(145, 210, 255);
+      transition: color 1s ease-in-out;
     }
 
   }
