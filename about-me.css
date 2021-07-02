@@ -267,4 +267,8 @@ footer {
       transition: all .15s ease-in-out;
     }
 
+    .back {
+      visibility: hidden;
+    }
+
   }
