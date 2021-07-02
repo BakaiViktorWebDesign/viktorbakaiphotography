@@ -10,6 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+  background: url(assets/background.png);
+  background-size: cover;
+}
+
 /* =======  NAVIGATION MENU ======= */
 
   .menu {
@@ -58,9 +63,13 @@ html {
       .menu {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 96%;
         z-index: 1;
-        text-align: right; 
+        text-align: right;
+        margin: 1rem 2% 0 2%; 
+        border-radius: 10px;
+        background-image: url(assets/menu.png);
+        background-size: cover;
       }
 
       .menu div {
@@ -81,23 +90,30 @@ html {
         margin-top: .5rem;
       }
 
+      .menu h1 {
+        color: rgba(0,0,0,1);
+        cursor: default;
+      }
+
       .menu a {
-        padding-left: .2rem;
-        padding-right: .2rem;
+        color: rgba(0,0,0,1);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0;
       }
 
       .menu a:hover {
-        background: none;
-        color: rgba(255,165, 0,1);
-        transition: color 1s ease-in-out;
+        background-color: rgba(255,165,0,1);
+        border-radius: 9999px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: background-color 1s ease-in-out;
       }
   }
 
 /* ======  HEADER  ========   */
 
 .cover {
-    background: url(assets/background.png);
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
@@ -117,36 +133,56 @@ html {
   .profile-image {
     width: 40%;
     border-radius: 20px;
+    margin-top: 2rem;
     margin-bottom: 4rem;
   }
 
   .byline h2 {
+    background-color: rgb(0,0,0,.4);
+    border-radius: 9999px;
+    padding: .8rem;
+    margin: 1rem 1rem;
     font-size: 3rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     letter-spacing: .1rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    text-shadow: .2rem .2rem 0.1rem rgba(0,0,0,1);
+    cursor: default;
   }
   
   .byline h3 {
+    background-color: rgb(0,0,0,.4);
+    border-radius: 9999px;
+    padding: 1rem;
+    margin: 1rem 1rem;
     font-size: 1.4rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-weight: 900;
+    text-shadow: .2rem .2rem 0.1rem rgba(0,0,0,1);
+    cursor: default;
   }
   
   .headline {
+    background-color: rgb(0,0,0,.4);
+    border-radius: 9999px;
+    padding: .5rem;
     font-size: 3rem;
-    margin: 2rem 0;
+    margin: 8rem 0;
+    text-shadow: .2rem .2rem 0.1rem rgba(0,0,0,1);
+    cursor: default;
   }
 
   .tagline {
-    background-color: rgb(0,0,0,.5);
+    background-color: rgb(0,0,0,.4);
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     font-weight: 900;
     border-radius: 9999px;
-    margin: 1rem 1rem;
+    margin: 3rem 1rem;
     padding: .5rem;
+    text-shadow: .2rem .2rem 0.1rem rgba(0,0,0,1);
+    cursor: default;
   }
   
   /* ====== MEDIA QUERY  ========= */
@@ -161,25 +197,33 @@ html {
     }
 
     .headline {
-      font-size: 6rem;
-      padding-top: 5rem;
+      width: 82%;
+      border-radius: 9999px;
+      padding: 1rem;
+      font-size: 5rem;
+      margin: 5rem auto;
     }
     
     .byline h2 {
+      width: 30%;
       font-size: 4rem;
       line-height: 4rem;
+      margin: 0 auto;
     }
     
     .byline h3 {
-    font-size: 1.8rem;
-    font-weight: 100;
+      width: 25%;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      font-weight: 900;
+      margin: 1rem auto;
     }
 
     .tagline {  
-    width: 55%;  
-    font-size: 1.5rem;
-    margin: 5rem auto;
-    text-shadow: .2rem .2rem 0.1rem rgba(0,0,0,1);
+      width: 55%;  
+      font-size: 1.4rem;
+      margin: 5rem auto;
+      padding: 1rem;
     }
   }
 
@@ -219,45 +263,50 @@ html {
   
   .footer-nav a:hover {
     background-color: rgba(255,255,255,.8);
-    border-radius: 5%;
+    border-radius: 10px;
     transition: all .15s ease-in-out;
   }
   
   /* ========  MEDIA QUERY  =======  */
 
   @media all and (min-width: 992px) {
-    footer {
-      display: block;
-      height: 6rem;
-      line-height: 2rem;
-      text-align: left;
-    }
 
     .footer-wrapper {
-      display: inline;
+      display: flex;
+    }
+
+    .design {
+      flex: 1;
+    }
+
+    footer {
+      background-image: url(assets/menu.png);
+      background-size: cover;
+      width: 96%;
+      margin: 0 2% 1rem 2%;
+      border-radius: 10px;
+      height: 0;
+      padding: 1rem;
     }
 
     footer small {
-      display: inline;
-      margin: .5rem 1rem;
-      padding: 0;
-      cursor: default;
+      color: rgba(0,0,0,1);
+      margin: 0;
     }
 
-    .footer-nav {
-      display: block;
-      position: absolute;
-      right: 1rem;
-    }
-    
     .footer-nav a {
-      padding: .2rem;
-      color: rgba(255,255,255,.8);
+      padding: 0;
+    }
+
+    .footer-nav a {
+      color: rgba(0,0,0,1);
+      padding: 0;
     }
 
     .footer-nav a:hover {
+      color: rgba(255,165,0,1);
       background: none;
-      color: rgba(255,165, 0,1);
-      transition: color 1s ease-in-out;
+      transition: all .15s ease-in-out;
     }
+
   }

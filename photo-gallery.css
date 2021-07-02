@@ -60,9 +60,13 @@ html {
   .menu {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 96%;
     z-index: 1;
-    text-align: right; 
+    text-align: right;
+    margin: 1rem 2% 0 2%; 
+    border-radius: 10px;
+    background-image: url(assets/menu.png);
+    background-size: cover;
   }
 
   .menu div {
@@ -83,15 +87,24 @@ html {
     margin-top: .5rem;
   }
 
+  .menu h1 {
+    color: rgba(0,0,0,1);
+    cursor: default;
+  }
+
   .menu a {
-    padding-left: .2rem;
-    padding-right: .2rem;
+    color: rgba(0,0,0,1);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
   }
 
   .menu a:hover {
-    background: none;
-    color: rgb(145, 210, 255);
-    transition: color 1s ease-in-out;
+    background-color: rgba(255,165,0,1);
+    border-radius: 9999px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: background-color 1s ease-in-out;
   }
 }
 
@@ -100,10 +113,11 @@ html {
 /* ========= MAIN ========== */
 
 body {
-    background-color: rgba(80, 100, 120,1);
-    background-image: url(assets/full-bloom.png);
-    background-blend-mode: overlay;
+  background-image: url(assets/upfeathers.png);
+  background-color: rgba(0,255,0,.2);
+  background-blend-mode: overlay;
 }
+
 
 .image {
     width: 100%;
@@ -187,46 +201,50 @@ footer {
   
   .footer-nav a:hover {
     background-color: rgba(255,255,255,.8);
-    border-radius: 5%;
+    border-radius: 10px;
     transition: all .15s ease-in-out;
   }
   
   /* ========  MEDIA QUERY  =======  */
 
   @media all and (min-width: 992px) {
-    footer {
-      display: block;
-      height: 6rem;
-      line-height: 2rem;
-      text-align: left;
-    }
 
     .footer-wrapper {
-      display: inline;
+      display: flex;
+    }
+
+    .design {
+      flex: 1;
+    }
+
+    footer {
+      background-image: url(assets/menu.png);
+      background-size: cover;
+      width: 96%;
+      margin: 0 2% 1rem 2%;
+      border-radius: 10px;
+      height: 0;
+      padding: 1rem;
     }
 
     footer small {
-      display: inline;
-      margin: .5rem 1rem;
-      padding: 0;
-      cursor: default;
+      color: rgba(0,0,0,1);
+      margin: 0;
     }
 
-    .footer-nav {
-      display: block;
-      position: absolute;
-      right: 1rem;
-    }
-    
     .footer-nav a {
-      color: rgba(255,255,255,.8);
-      padding: 0.2rem;
+      padding: 0;
+    }
+
+    .footer-nav a {
+      color: rgba(0,0,0,1);
+      padding: 0;
     }
 
     .footer-nav a:hover {
+      color: rgba(255,165,0,1);
       background: none;
-      color: rgb(145, 210, 255);
-      transition: color 1s ease-in-out;
+      transition: all .15s ease-in-out;
     }
 
   }
