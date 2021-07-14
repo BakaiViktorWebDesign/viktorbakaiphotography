@@ -6,8 +6,19 @@
     box-sizing: border-box;
 }
 
+/*========== BASIC STYLE ==========*/
+
 html {
   scroll-behavior: smooth;
+}
+
+@media all and (min-width: 992px) {
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
 }
 
 /* =======  NAVIGATION MENU ======= */
@@ -155,7 +166,8 @@ body {
 
 @media all and (min-width: 992px) {
   .box {
-    margin-top: 10rem;
+    align-self: center;
+    margin: auto;
   } 
   
   .cont {
@@ -221,10 +233,12 @@ footer {
     }
 
     footer {
+      position: fixed;
+      bottom: 1rem;
       background-image: url(assets/menu.png);
       background-size: cover;
       width: 96%;
-      margin: 2rem 2% 1rem 2%;
+      margin: 0 2% 0 2%;
       border-radius: 10px;
       height: 0;
       padding: 1rem;

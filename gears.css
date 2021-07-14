@@ -26,6 +26,7 @@ html {
 
 .menu h1 {
   color: rgba(255,255,255,.8);
+  cursor: default;
   
 }
 
@@ -201,6 +202,10 @@ body {
     height: auto;
     margin: 2rem 5% 2% 2%;
     border-radius: 15px;
+  }
+
+  .smaller {
+    width: 20%;
   }
 
   .article-list {

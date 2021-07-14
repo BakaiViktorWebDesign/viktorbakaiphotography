@@ -6,8 +6,19 @@
     box-sizing: border-box;
 }
 
+/*========== BASIC STYLE ==========*/
+
 html {
   scroll-behavior: smooth;
+}
+
+@media all and (min-width: 992px) {
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
 }
 
 /* =======  NAVIGATION MENU ======= */
@@ -145,6 +156,10 @@ body {
 /* =============== MEDIA QUERY =========== */
 
 @media all and (min-width: 992px) {
+
+    .main-block {
+      align-self: center;
+    }
     
     .wrapper {
       display: flex;
@@ -153,8 +168,8 @@ body {
     }
 
     .profile-image {
-      width: 10%;
-      margin-left: 2rem;
+      width: 12rem;
+      margin-left: 5rem;
       border-radius: 10px;
       box-shadow: none;
     }
@@ -164,16 +179,12 @@ body {
       font-size: 1.5rem;
       color: rgba(0,0,0,1);
       text-align: center;
-      margin-top: 10rem;
-      margin-bottom: 8rem;
       line-height: 2rem;
       font-weight: 900;
     }
     
     .about-me-images {
-      margin-top: 4.5rem;
-      margin-bottom: 3rem;
-      margin-right: 2rem;
+      margin-right: 5rem;
     }
 
     .about-me-images img {
@@ -238,10 +249,12 @@ footer {
     }
 
     footer {
+      position: fixed;
+      bottom: 1rem;
       background-image: url(assets/menu.png);
       background-size: cover;
       width: 96%;
-      margin: 1.5rem 2% 1rem 2%;
+      margin: 0 2% 0 2%;
       border-radius: 10px;
       height: 0;
       padding: 1rem;
