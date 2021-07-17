@@ -118,52 +118,97 @@ body {
   background-blend-mode: overlay;
 }
 
+main {
+  margin-top: 4rem;
+}
 
-.image {
-    width: 100%;
+.title-types {
+  font-family: 'KoHo', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  color: rgba(0,0,0,1);
+  text-align: center;
+  margin: 4rem;
+  font-weight: 900;
+  cursor: default;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image img {
-    display: block;
-    width: 80vw;
-    margin: 3rem auto;
-    border: .1rem solid rgba(0,0,0,1);
-    border-radius: 15px;
-    padding: 1rem;
-    opacity: 60%;
+  width: 80vw;
+  border: .1rem solid rgba(0,0,0,1);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+hr {
+  width: 85vw;
+  height: .5rem;
+  color: rgba(0,0,0,1);
+  background-color: rgba(0,0,0,1);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+
+@media all and (min-width: 992px) {
+
+main {
+  margin-top: 8rem;
+}
+
+.title-types {
+  font-family: 'KoHo', sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: rgba(0,0,0,1);
+  text-align: center;
+  margin: 4rem;
+  font-weight: 900;
+  cursor: default;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image img {
+  width: 15rem;
+  border: .1rem solid rgba(0,0,0,1);
+  border-radius: 15px;
+  padding: 1rem;
+  opacity: 60%;
+  margin: 2rem;
+  margin-bottom: 12rem;
+  -webkit-box-reflect: below 0.4rem linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
 }
 
 .image img:hover {
-    opacity: 100%;
-    box-shadow: 0 0 1rem .5rem rgba(255,255,255,.5);
-    transition: all 1.5s ease-in-out;
+  opacity: 100%;
+  transition: all 1.5s ease-in-out;
 }
 
-/* ============ MEDIA QUERY ============= */
-
-@media all and (min-width: 992px) {
-  main {
-    margin-top: 6rem;
-  }
-
-  .image {
-    display: inline;
-  }
-
- .image img{
-     display: inline-block;
-     vertical-align: middle;
-     width: 15vw;
-     margin: 6rem 2.4rem;
-     -webkit-box-reflect: below 0.4rem linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
-   }
-
-   .image img:hover {
-     padding: 1rem;
-     transition: all 1s ease-in-out;
-     box-shadow: none;
-   }
+hr {
+  width: 85vw;
+  height: .2rem;
+  color: rgba(0,0,0,1);
+  background-color: rgba(0,0,0,1);
+  margin: 0 auto;
+  border-radius: 5px;
 }
+
+}
+
 
 /* =======  FOOTER  =========  */
 
