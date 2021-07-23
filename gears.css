@@ -163,7 +163,7 @@ body {
   height: 0;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 
 .video-container iframe {
@@ -191,7 +191,7 @@ body {
     font-size: 2rem;
     text-decoration: underline;
     text-align: center;
-    margin: 4rem 0 3rem 3%;
+    margin: 6rem 0 3rem 3%;
     font-weight: 900;
   }
 
@@ -200,8 +200,14 @@ body {
     float: right;
     width: 25%;
     height: auto;
-    margin: 2rem 5% 2% 2%;
+    margin: 4rem 5% 2% 2%;
     border-radius: 15px;
+  }
+
+  .article-img::after, .article-list::after {
+    content: "";
+    clear: both;
+    display: block;
   }
 
   .smaller {
@@ -239,7 +245,12 @@ body {
     border-radius: 15px;
   }
 
+  .video-title {
+    margin-top: 8rem;
+  }
+
 }
+
 
 /* =======  FOOTER  =========  */
 

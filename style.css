@@ -190,6 +190,7 @@ body {
       border-radius: 20px;
       margin-top: 8rem;
       margin-bottom: 4rem;
+      filter: saturate(50%);
     }
 
     .headline {
